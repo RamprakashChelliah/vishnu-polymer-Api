@@ -5,7 +5,7 @@ const path = require("path");
 function getTaps(searchText){
     let tapList = getFile();
     if(searchText !== null && searchText !== undefined && searchText !== ""){
-        return tapList.filter(x => x.tapName.toLower().includes(searchText.toLower()))
+        return tapList.filter(x => x.tapName.includes(searchText))
     }
     return tapList;
 }

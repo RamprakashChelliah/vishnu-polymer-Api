@@ -5,7 +5,7 @@ const path = require("path");
 function getEntries(searchText){
     let entryList = getFile();
     if(searchText !== null && searchText !== undefined && searchText !== ""){
-        return entryList.filter(x => x.tapName.toLower().includes(searchText.toLower()))
+        return entryList.filter(x => x.tapName.includes(searchText))
     }
     return entryList;
 }
