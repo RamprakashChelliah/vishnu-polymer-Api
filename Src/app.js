@@ -14,9 +14,9 @@ const { exitDetailRouter } = require('./routes/exit-detail/exit-detail.router');
 const app = express();
 
 // set cors
-// app.use(cors({
-//     origin: ['http://localhost:4200', 'https://ramprakashchelliah.github.io/Vishnu-polymer/']
-// }))
+app.use(cors({
+    origin: ['http://localhost:4200', 'https://ramprakashchelliah.github.io/']
+}))
 
 // use middelware to log our request
 app.use(morgan('combined'));
